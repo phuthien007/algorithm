@@ -1,0 +1,33 @@
+Problem:
+Một hệ thống phòng thủ của địch gồm N điểm (N<=100), giữa các điểm bất kỳ của hệ thống đều có thể đi lại trực tiếp hoặc gián tiếp với nhau thông qua hệ thống các đường hầm. Bài toán được đặt ra là cho trước một hệ thống phòng thủ, hãy giúp bộ đội sử dụng đúng 1 quả pháo bắn vào một trong N điểm sao cho hệ thống bị chia cắt thành nhiều mảnh nhất.
+Input
+Dòng đầu tiên ghi số bộ test, không lớn hơn 100. Mỗi bộ test được tổ chức theo khuôn dạng sau:
+Dòng đầu tiên ghi lại số tự nhiên N không lớn hơn 100 là số điểm của hệ thống phòng thủ. 
+Những dòng kế tiếp ghi lại ma trận G = (gij) biểu diễn hệ thống phòng thủ, trong đó gij=0 được hiểu là không có đường hầm trực tiếp nối giữa điểm i và j, gij =1 được hiểu có đường hầm nối trực tiếp giữa điểm i và điểm j (1<=i, j<=N).
+Output
+Với mỗi bộ test, in ra màn hình trên một dòng một số duy nhất là đỉnh bị phá hủy thỏa mãn yêu cầu bài toán (nếu có nhiều đỉnh cùng thỏa mãn yêu cầu thì in ra đỉnh có giá trị nhỏ nhất). Nếu không thể chia cắt được hệ thống, hãy in ra số 0.
+Example:
+Input
+
+
+2
+5
+0   1   1   0   0
+1   0   1   0   0
+1   1   0   1   1
+0   0   1   0   0
+0   0   1   0   0
+
+5
+0   1   1   0   0
+1   0   1   0   1
+1   1   0   1   1
+0   0   1   0   1
+0   1   1   1   0
+
+Output:
+
+3
+
+
+0
